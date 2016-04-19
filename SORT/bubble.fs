@@ -1,8 +1,7 @@
-let sort l = 
-  let rec sortUtil acc rev l =
-    match l, rev with
-    | [], true -> acc |> List.rev
-    | [], false -> acc |> List.rev |> sortUtil [] true
-    | x::y::tl, _ when x > y -> sortUtil (y::acc) false (x::tl)
-    | hd::tl, _ -> sortUtil (hd::acc) rev tl
-  sortUtil [] true l
+let sort (arr:'a[]) = 
+  let arr = arr |> Array.copy
+  let swap i j = let tmp = arr.[i] in arr.[i] <- arr.[j]; arr.[j] <- tmp
+  for i = arr.Length - 1 downto 0 do
+    for j = 1 to i do
+      if (arr.[j - 1] > arr.[j]) then swap (j-1) j
+  arr
