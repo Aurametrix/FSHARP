@@ -5,4 +5,5 @@ F# - originated from ML, influenced by OCaml, C#, Python, Haskell, Scala and Erl
 + [Getting started with the F# and .Net ecosystem](http://www.prigrammer.com/?p=363)
 + [Fsharp Teaching](https://github.com/jinyus/Fsharp-Teaching)
 + [Write your own programming system](https://d3s.mff.cuni.cz/teaching/nprg077/)
++ [F# in action](https://www.manning.com/books/f-sharp-in-action)
 
